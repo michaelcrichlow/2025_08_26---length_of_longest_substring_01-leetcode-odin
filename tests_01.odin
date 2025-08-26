@@ -62,7 +62,7 @@ length_of_longest_substring_01 :: proc(s: string) -> int {
 
         // If duplicate found, shrink window from the left
         // This is a 'while (invalid)...' loop
-        for (seen[char]) > 1 {
+        for (seen[char] > 1) {
             seen[s[left]] -= 1
             left += 1
         }
